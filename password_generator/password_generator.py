@@ -4,6 +4,8 @@ import random
 import sys
 from .stuff import word_set
 
+__version__ = "0.0.1"
+
 
 def password_generator(word_set):
     """
@@ -17,7 +19,7 @@ def password_generator(word_set):
     delimiter = "-"
     if len(sys.argv) > 1:  # Argument handling
         if "--set_length" in sys.argv and \
-            represents_int(sys.argv[sys.argv.index("--set_length") + 1]):
+                represents_int(sys.argv[sys.argv.index("--set_length") + 1]):
             num = int(sys.argv[sys.argv.index("--set_length") + 1])
         if "--set_delimiter" in sys.argv:
             delimiter = (sys.argv[sys.argv.index("--set_delimiter") + 1])
@@ -48,6 +50,3 @@ def main():
     Main function for running the program
     """
     print(password_generator(word_set))
-
-if __name__ == "__main__":
-    main()

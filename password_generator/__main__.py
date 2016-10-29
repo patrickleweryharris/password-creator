@@ -4,6 +4,6 @@
 """password_generator.__main__: executed when directory is called as script."""
 
 
-from .anagram_solver import main
+from .password_generator import main
 
 main()
