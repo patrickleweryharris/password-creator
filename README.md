@@ -29,7 +29,7 @@ If default settings are used, there are > 1.62 * 10^14 different possibilities f
 
 Randomness is provided by the python random.sample function
 
-**Note**: This project has not been fully security audited. Use passwords from here at your own risk
+**Note**: This project has not been security audited. Use passwords from here at your own risk
 
 ## Background
 
