@@ -53,8 +53,22 @@ razors-snip-horsehairs # Just an example, your passwords will be different
 
 - The number of characters in a password can also be set.
 
-Both, one, or none of these can be changed at will:
+- Both, one, or none of these can be changed at will:
 
+```shell
+$ password_creator --set_length x
+# Sets the number of words in the password to be integer x
+```
+
+```shell
+$ password_creator --set_delimiter c
+# Sets the delimiter between the words to be string c
+```
+```shell
+$ password_creator --set_chars y
+# Sets the total number of characters in the password to be integer y
+```
+- Examples:
 ```shell
 $ password_creator --set_length 6 --set_delimiter /
 stumbles/almanacs/weevils/exemplified/spiffy/mortises # An example
@@ -64,10 +78,10 @@ stumbles/almanacs/weevils/exemplified/spiffy/mortises # An example
 $ password_creator --set_chars 4
 flou # An example
 ```
-
-- Any valid integer can be used as a length or number of characters.
-- Delimiters can be any string. Not that the last character in the string is always shaved off to provide better readability for simple input.  
-**Note**: any invalid inputs will result in the default values being used.  
+- Notes
+  - Any valid integer can be used as a length or number of characters.
+  - Delimiters can be any string. Not that the last character in the string is always shaved off to provide better readability for simple input.  
+  - Any invalid inputs will result in the default values being used.  
 
 ## Contribute
 
