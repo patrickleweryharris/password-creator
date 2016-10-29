@@ -67,7 +67,7 @@ flou # An example
 
 - Any valid integer can be used as a length or number of characters.
 - Delimiters can be any string. Not that the last character in the string is always shaved off to provide better readability for simple input.  
-**Note**: any invalid inputs will result in the default values being used.
+**Note**: any invalid inputs will result in the default values being used.  
 ## Contribute
 
 PRs accepted.
