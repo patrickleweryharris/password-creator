@@ -4,7 +4,9 @@ import random
 import sys
 from .stuff import word_set
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
+special_chars = {"!", "@", "#", "$", "%", "^", "&", "*", "("}
+numbers = set(range(1, 1000))
 
 
 def password_creator(word_set):
@@ -30,6 +32,13 @@ def password_creator(word_set):
     words = random.sample(word_set, num)
     for item in words:
         returned_str += item + delimiter
+    middle = len(returned_str)//2
+    if "--with_numbers" in sys.argv:
+        returned_str = returned_str[:middle] + str((random.sample(numbers, 1)[0])) + returned_str[middle:]
+        middle += 1
+    if "--with_specials" in sys.argv:
+        returned_str = returned_str[:middle] + random.sample(special_chars, 1)[0] + returned_str[middle:]
+        middle += 1
     return returned_str[0:chars].replace("'s", "s")
 
 

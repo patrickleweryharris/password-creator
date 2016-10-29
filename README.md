@@ -2,7 +2,7 @@
 
 
 ![python](https://img.shields.io/badge/python-3-blue.svg?style=flat-square)
-[![pypi](https://img.shields.io/badge/pypi-v1.0.0-blue.svg?style=flat-square)](https://pypi.python.org/pypi/anagram-solver) [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/patrickleweryharris/anagram-solver/blob/master/LICENSE) [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![pypi](https://img.shields.io/badge/pypi-v1.1.0-blue.svg?style=flat-square)](https://pypi.python.org/pypi/anagram-solver) [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/patrickleweryharris/anagram-solver/blob/master/LICENSE) [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 
 > Random password generation from the command line
@@ -51,9 +51,11 @@ razors-snip-horsehairs # Just an example, your passwords will be different
 ## API
 - By default, passwords are three random words long, delimited with dashes.
 
+- Numbers and special characters can be added if you want them
+
 - The number of characters in a password can also be set.
 
-- Both, one, or none of these can be changed at will:
+- All, some, one, or none of these can be changed at will:
 
 ```shell
 $ password_creator --set_length x
@@ -68,16 +70,29 @@ $ password_creator --set_delimiter c
 $ password_creator --set_chars y
 # Sets the total number of characters in the password to be integer y
 ```
+```shell
+$ password_creator --with_numbers
+# Adds a random number from 1 - 1000 to the password
+```
+```shell
+$ password_creator --with_specials
+# Adds a random character from {"!", "@", "#", "$", "%", "^", "&", "*", "("}
+# to the password
+```
 - Examples:
 ```shell
 $ password_creator --set_length 6 --set_delimiter /
 stumbles/almanacs/weevils/exemplified/spiffy/mortises # An example
 ```
-
 ```shell
 $ password_creator --set_chars 4
 flou # An example
 ```
+```shell
+$ password_creator --with_specials --with_numbers                                    
+mooch-kinsma6%25ns-handbags # An example
+```
+$
 - Notes
   - Any valid integer can be used as a length or number of characters.
   - Delimiters can be any string. Not that the last character in the string is always shaved off to provide better readability for simple input.  
