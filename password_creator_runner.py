@@ -5,7 +5,7 @@
 """Convenience wrapper for running bootstrap directly from source tree."""
 
 
-from password_generator.password_generator import main
+from password_creator.password_creator import main
 
 
 if __name__ == '__main__':

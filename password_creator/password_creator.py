@@ -7,7 +7,7 @@ from .stuff import word_set
 __version__ = "0.0.1"
 
 
-def password_generator(word_set):
+def password_creator(word_set):
     """
     Generate a "random" password based on words from the word set
 
@@ -49,4 +49,4 @@ def main():
     """
     Main function for running the program
     """
-    print(password_generator(word_set))
+    print(password_creator(word_set))
