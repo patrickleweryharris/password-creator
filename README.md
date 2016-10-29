@@ -21,19 +21,19 @@ Create random passwords using a dictionary of close to one hundred thousand Engl
 
 ## Security
 
-password_creator is entirely hosted on the client machine, no internet connection is ever used after installation
+- password_creator is entirely hosted on the client machine, no internet connection is ever used after installation.
 
-All words used in passwords are randomly sampled from a set of 99172 common english words, which can be found in [password_creator/stuff.py](https://github.com/patrickleweryharris/password_creator/blob/master/password_creator/stuff.py)
+- All words used in passwords are randomly sampled from a set of 99172 common english words, which can be found in [password_creator/stuff.py](https://github.com/patrickleweryharris/password_creator/blob/master/password_creator/stuff.py).
 
-If default settings are used, there are > 1.62 * 10^14 different possibilities for the output
+- If default settings are used, there are > 1.62 * 10^14 different possibilities for the output.
 
-Randomness is provided by the python random.sample function
+- Randomness is provided by the python random.sample function.
 
-**Note**: This project has not been security audited. Use passwords from here at your own risk
+- **Note**: This project has not been security audited. Use passwords from here at your own risk.
 
 ## Background
 
-Project inspired by the [1password](https://github.com/AgileBits) random password generator
+Project inspired by the [1password](https://github.com/AgileBits) random password generator.
 
 ## Install
 
@@ -49,9 +49,9 @@ razors-snip-horsehairs # Just an example, your passwords will be different
 ```
 
 ## API
-By default, passwords are three random words long, delimited with dashes.
+- By default, passwords are three random words long, delimited with dashes.
 
-The number of characters in a password can also be set.
+- The number of characters in a password can also be set.
 
 Both, one, or none of these can be changed at will:
 
@@ -64,7 +64,10 @@ stumbles/almanacs/weevils/exemplified/spiffy/mortises # An example
 $ password_creator --set_chars 4
 flou # An example
 ```
-**Note**: any invalid inputs will result in the default values being used
+
+- Any valid integer can be used as a length or number of characters.
+- Delimiters can be any string. Not that the last character in the string is always shaved off to provide better readability for simple input.  
+**Note**: any invalid inputs will result in the default values being used.
 ## Contribute
 
 PRs accepted.
