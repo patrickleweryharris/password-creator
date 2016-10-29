@@ -23,7 +23,7 @@ Create random passwords using a dictionary of close to one hundred thousand Engl
 
 password_creator is entirely hosted on the client machine, no internet connections is ever used after installation
 
-All words used in passwords are randomly sampled from a set of 99172 common english words, which can be found [password_creator/stuff.py](https://github.com/patrickleweryharris/password_creator/blob/master/password_creator/stuff.py)
+All words used in passwords are randomly sampled from a set of 99172 common english words, which can be found in [password_creator/stuff.py](https://github.com/patrickleweryharris/password_creator/blob/master/password_creator/stuff.py)
 
 If default settings are used, there are > 1.62 * 10^14 different possibilities for the output
 
@@ -41,7 +41,7 @@ $ pip install password-creator
 
 ```shell
 $ password_creator
-yuletide-southwests-wheal # Just an example, your passwords will be different
+razors-snip-horsehairs # Just an example, your passwords will be different
 ```
 
 ## API
