@@ -4,7 +4,7 @@ import random
 import sys
 from .stuff import word_set
 
-__version__ = "0.0.1"
+__version__ = "1.0.0"
 
 
 def password_creator(word_set):
@@ -17,16 +17,20 @@ def password_creator(word_set):
     returned_str = ""
     num = 3
     delimiter = "-"
+    chars = -1
     if len(sys.argv) > 1:  # Argument handling
         if "--set_length" in sys.argv and \
                 represents_int(sys.argv[sys.argv.index("--set_length") + 1]):
             num = int(sys.argv[sys.argv.index("--set_length") + 1])
         if "--set_delimiter" in sys.argv:
-            delimiter = (sys.argv[sys.argv.index("--set_delimiter") + 1])
+            delimiter = sys.argv[sys.argv.index("--set_delimiter") + 1]
+        if "--set_chars" in sys.argv and \
+                represents_int(sys.argv[sys.argv.index("--set_chars") + 1]):
+            chars = int(sys.argv[sys.argv.index("--set_chars") + 1])
     words = random.sample(word_set, num)
     for item in words:
         returned_str += item + delimiter
-    return returned_str[:-1].replace("'s", "s")
+    return returned_str[0:chars].replace("'s", "s")
 
 
 def represents_int(s):

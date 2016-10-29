@@ -2,7 +2,7 @@
 
 
 ![python](https://img.shields.io/badge/python-3-blue.svg?style=flat-square)
-[![pypi](https://img.shields.io/badge/pypi-v1.1.0-blue.svg?style=flat-square)](https://pypi.python.org/pypi/anagram-solver) [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/patrickleweryharris/anagram-solver/blob/master/LICENSE) [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![pypi](https://img.shields.io/badge/pypi-v0.0.1-blue.svg?style=flat-square)](https://pypi.python.org/pypi/anagram-solver) [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/patrickleweryharris/anagram-solver/blob/master/LICENSE) [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 
 > Random password generation from the command line
@@ -43,13 +43,20 @@ yuletide-southwests-wheal # Just an example, your passwords will be different
 ```
 
 ## API
-By default, passwords are three random words long, delimited with dashes
+By default, passwords are three random words long, delimited with dashes.
+
+The number of characters in a password can also be set
 
 Both, one, or none of these can be changed at will:
 
 ```shell
 $ password_creator --set_length 6 --set_delimiter /
 stumbles/almanacs/weevils/exemplified/spiffy/mortises # An example
+```
+
+```shell
+$ password_creator --set_chars 4
+flou # An example
 ```
 **Note**: any invalid inputs will result in the default values being used
 ## Contribute
