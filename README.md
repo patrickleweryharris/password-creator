@@ -1,4 +1,4 @@
-# password-creator ![banner](http://www.endlessicons.com/wp-content/uploads/2012/12/lock-icon-614x460.png)
+# password-creator ![banner](/img/logo.png)
 
 
 ![python](https://img.shields.io/badge/python-3-blue.svg?style=flat-square)
