@@ -15,7 +15,7 @@ def password_creator(word_set):
     @return: str
     """
     returned_str = ""
-    num = 3
+    num = 3  # Default number of words is 3, default delimiter is the dash
     delimiter = "-"
     chars = -1
     if len(sys.argv) > 1:  # Argument handling
