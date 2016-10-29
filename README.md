@@ -27,6 +27,10 @@ All words used in passwords are randomly sampled from a set of 99172 common engl
 
 If default settings are used, there are > 1.62 * 10^14 different possibilities for the output
 
+Randomness is provided by the python random.sample function
+
+**Note**: This project has not been fully security audited. Use passwords from here at your own risk
+
 ## Background
 
 Project inspired by the [1password](https://github.com/AgileBits) random password generator
