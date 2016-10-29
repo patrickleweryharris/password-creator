@@ -21,7 +21,7 @@ Create random passwords using a dictionary of close to one hundred thousand Engl
 
 ## Security
 
-password_creator is entirely hosted on the client machine, no internet connections is ever used after installation
+password_creator is entirely hosted on the client machine, no internet connection is ever used after installation
 
 All words used in passwords are randomly sampled from a set of 99172 common english words, which can be found in [password_creator/stuff.py](https://github.com/patrickleweryharris/password_creator/blob/master/password_creator/stuff.py)
 
@@ -51,7 +51,7 @@ razors-snip-horsehairs # Just an example, your passwords will be different
 ## API
 By default, passwords are three random words long, delimited with dashes.
 
-The number of characters in a password can also be set
+The number of characters in a password can also be set.
 
 Both, one, or none of these can be changed at will:
 
