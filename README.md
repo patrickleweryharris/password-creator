@@ -92,7 +92,6 @@ flou # An example
 $ password_creator --with_specials --with_numbers                                    
 mooch-kinsma6%25ns-handbags # An example
 ```
-$
 - Notes
   - Any valid integer can be used as a length or number of characters.
   - Delimiters can be any string. Not that the last character in the string is always shaved off to provide better readability for simple input.  
