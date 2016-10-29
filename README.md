@@ -1,4 +1,4 @@
-# password-creator ![banner](https://github.com/patrickleweryharris/password_creator/blob/master/img/logo.png)
+# password-creator ![banner](https://raw.githubusercontent.com/patrickleweryharris/password_creator/master/img/logo.png)
 
 
 ![python](https://img.shields.io/badge/python-3-blue.svg?style=flat-square)
