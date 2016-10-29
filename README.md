@@ -1,8 +1,8 @@
-# password-creator ![banner](/img/logo.png)
+# password-creator ![banner](https://github.com/patrickleweryharris/password_creator/blob/master/img/logo.png)
 
 
 ![python](https://img.shields.io/badge/python-3-blue.svg?style=flat-square)
-[![pypi](https://img.shields.io/badge/pypi-v0.0.1-blue.svg?style=flat-square)](https://pypi.python.org/pypi/anagram-solver) [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/patrickleweryharris/anagram-solver/blob/master/LICENSE) [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![pypi](https://img.shields.io/badge/pypi-v1.0.0-blue.svg?style=flat-square)](https://pypi.python.org/pypi/anagram-solver) [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/patrickleweryharris/anagram-solver/blob/master/LICENSE) [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 
 > Random password generation from the command line
