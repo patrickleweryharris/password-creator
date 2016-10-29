@@ -25,6 +25,8 @@ password_creator is entirely hosted on the client machine, no internet connectio
 
 All words used in passwords are randomly sampled from a set of 99172 common english words, which can be found [password_creator/stuff.py](https://github.com/patrickleweryharris/password_creator/blob/master/password_creator/stuff.py)
 
+If default settings are used, there are > 1.62 * 10^14 different possibilities for the output
+
 ## Background
 
 Project inspired by the [1password](https://github.com/AgileBits) random password generator
