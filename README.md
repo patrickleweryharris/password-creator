@@ -94,7 +94,7 @@ mooch-kinsma6%25ns-handbags # An example
 ```
 - Notes
   - Any valid integer can be used as a length or number of characters.
-  - Delimiters can be any string. Not that the last character in the string is always shaved off to provide better readability for simple input.  
+  - Delimiters can be any string. The last character in the full password (this will be either the delimiter or the last character of the delimiter if the delimiter is a bigger string) is striped by default as to avoid having to use recursion. This cannot currently be changed
   - Any invalid inputs will result in the default values being used.  
 
 ## Contribute
