@@ -1,7 +1,6 @@
 #!/usr/local/bin/python3
 # -*- coding: utf-8 -*-
 import random
-import sys
 import argparse
 from .stuff import word_set
 
