@@ -1,8 +1,8 @@
 # password-creator ![banner](https://raw.githubusercontent.com/patrickleweryharris/password_creator/master/img/logo.png)
 
 
-![python](https://img.shields.io/badge/python-3-blue.svg?style=flat-square)
-[![pypi](https://img.shields.io/badge/pypi-v1.1.0-blue.svg?style=flat-square)](https://pypi.python.org/pypi/password-creator) [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/patrickleweryharris/password_creator/blob/master/LICENSE.txt) [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![Build Status](https://travis-ci.com/patrickleweryharris/password-creator.svg?branch=master)](https://travis-ci.com/patrickleweryharris/password-creator)![python](https://img.shields.io/badge/python-3-blue.svg?style=flat-square)
+[![pypi](https://img.shields.io/badge/pypi-v1.2.0-blue.svg?style=flat-square)](https://pypi.python.org/pypi/password-creator) [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/patrickleweryharris/password_creator/blob/master/LICENSE.txt) [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 
 > Random password generation from the command line
