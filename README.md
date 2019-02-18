@@ -72,13 +72,15 @@ $ password_creator --set_chars y
 ```
 ```shell
 $ password_creator --with_numbers
-# Adds a random number from 1 - 1000 to the password
+# Add random numbers from 1 - 1000 to the password (at a 1:10 ratio)
 ```
 ```shell
 $ password_creator --with_specials
-# Adds a random character from {"!", "@", "#", "$", "%", "^", "&", "*", "("}
-# to the password
+# Adds random characters from {"!", "@", "#", "$", "%", "^", "&", "*", "("}
+# to the password (at a 1:10 ratio)
 ```
+Note that the ratio for ``--with_specials`` and ``--with_numbers`` is shared
+
 - Examples:
 ```shell
 $ password_creator --set_length 6 --set_delimiter /
@@ -95,7 +97,6 @@ mooch-kinsma6%25ns-handbags # An example
 - Notes
   - Any valid integer can be used as a length or number of characters.
   - Delimiters can be any string. The last character in the full password (this will be either the delimiter or the last character of the delimiter if the delimiter is a bigger string) is striped by default as to avoid having to use recursion. This cannot currently be changed
-  - Any invalid inputs will result in the default values being used.  
 
 ## Contribute
 

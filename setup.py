@@ -15,7 +15,8 @@ version = re.search(
 setup(
     name="password_creator",
     packages=["password_creator"],
-    entry_points={"console_scripts": ['password_creator = password_creator.password_creator:main']},
+    entry_points={"console_scripts": [
+        'password_creator = password_creator.password_creator:main']},
     version=version,
     description="Create random passwords from the command line",
     long_description="Create random passwords using a dictionary of close to one hundred thousand English words",
